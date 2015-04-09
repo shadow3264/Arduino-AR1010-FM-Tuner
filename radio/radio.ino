@@ -76,6 +76,7 @@ void setup(void) {
   lcd.clearDisplay();
    
   set_text(1,2,"FM Radio",BLACK,1);  
+  set_text(1,39,"(c)shadow3264",BLACK,0.1);
   //set_text(1,39,"Niklas & Khoa",BLACK,0.1);
   
 }
@@ -92,17 +93,17 @@ void loop() {
           
   if(old_seek_mode!=seek_mode){
       
-       set_text(77,8,old_seek_mode?"S":"",WHITE,1);
-       set_text(77,8,seek_mode?"S":"",BLACK,1);
+       set_text(77,4,old_seek_mode?"S":"",WHITE,1);
+       set_text(77,4,seek_mode?"S":"",BLACK,1);
        
-       set_text(77,16,old_seek_mode?"E":"",WHITE,1);
-       set_text(77,16,seek_mode?"E":"",BLACK,1);
+       set_text(77,12,old_seek_mode?"E":"",WHITE,1);
+       set_text(77,12,seek_mode?"E":"",BLACK,1);
        
-       set_text(77,24,old_seek_mode?"E":"",WHITE,1);
-       set_text(77,24,seek_mode?"E":"",BLACK,1);
+       set_text(77,20,old_seek_mode?"E":"",WHITE,1);
+       set_text(77,20,seek_mode?"E":"",BLACK,1);
               
-       set_text(77,32,old_seek_mode?"K":"",WHITE,1);
-       set_text(77,32,seek_mode?"K":"",BLACK,1);
+       set_text(77,28,old_seek_mode?"K":"",WHITE,1);
+       set_text(77,28,seek_mode?"K":"",BLACK,1);
        
        old_seek_mode=seek_mode;
          
